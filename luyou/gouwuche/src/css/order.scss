@@ -1,0 +1,128 @@
+@import './common/common.scss';
+@import './common/_mixin.scss';
+.order {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    background: #eee;
+    .list {
+        width: 100%;
+        height: auto;
+        ul {
+            width: 100%;
+            height: auto;
+            li {
+                width: 100%;
+                padding: pxTorem(15px) pxTorem(0px);
+                border-bottom: solid pxTorem(3px) #999;
+                text-align: center;
+                font-size: pxTorem(14px);
+            }
+        }
+    }
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+    >div {
+        width: 100%;
+        height: auto;
+        .main {
+            width: 100%;
+            height: auto;
+            padding-bottom: pxTorem(40px);
+            h4 {
+                width: 97%;
+                height: pxTorem(40px);
+                padding-left: 3%;
+                line-height: pxTorem(40px);
+                font-size: pxTorem(15px);
+                color: #f00;
+            }
+            dl {
+                width: 94%;
+                height: auto;
+                padding: pxTorem(10px) 3%;
+                display: flex;
+                position: relative;
+                dt {
+                    width: 27%;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+                dd {
+                    margin-left: pxTorem(15px);
+                    h5 {
+                        font-size: pxTorem(14px)
+                    }
+                    p {
+                        color: #999;
+                        margin-top: pxTorem(4px);
+                        em {
+                            font-size: pxTorem(16px);
+                            color: #f00;
+                        }
+                    }
+                }
+                a {
+                    position: absolute;
+                    bottom: pxTorem(15px);
+                    right: 2%;
+                    em {
+                        width: pxTorem(23px);
+                        height: pxTorem(23px);
+                        display: inline-block;
+                        border-radius: 50%;
+                        background: #ff0;
+                        margin: 0 pxTorem(8px);
+                        text-align: center;
+                        line-height: pxTorem(23px);
+                        font-size: pxTorem(20px)
+                    }
+                    span {
+                        line-height: pxTorem(23px);
+                        font-size: pxTorem(14px)
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 94%;
+    height: pxTorem(40px);
+    padding: 0 3%;
+    background: #0df;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    span {
+        font-size: pxTorem(14px);
+        em {
+            margin: 0 pxTorem(12px);
+            color: #f00;
+            font-size: pxTorem(20px)
+        }
+        b {
+            margin-right: pxTorem(5px);
+            font-size: pxTorem(20px);
+            color: #f00;
+        }
+    }
+}

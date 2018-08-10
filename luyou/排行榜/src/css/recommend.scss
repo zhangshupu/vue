@@ -1,0 +1,59 @@
+@import './common/common.scss';
+@import './common/_mixin.scss';
+.betscroll {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    ul {
+        width: 100%;
+        height: auto;
+        li {
+            width: 100%;
+            height: auto;
+            padding: pxTorem(15px) pxTorem(0px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: solid #eee pxTorem(1px);
+            dl {
+                width: 70%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                dd {
+                    margin-left: pxTorem(15px);
+                    font-size: pxTorem(18px);
+                    color: #f00;
+                }
+                .titel {
+                    width: 45%;
+                    height: auto;
+                    @include one-line;
+                    color: #000;
+                }
+                dt {
+                    margin-left: pxTorem(30px);
+                    width: 18%;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+            }
+            span {
+                margin-right: pxTorem(20px);
+                font-size: pxTorem(18px);
+                width: 20%;
+                @include one-line;
+            }
+        }
+    }
+}
